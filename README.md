@@ -1,7 +1,7 @@
 # Teoría de la Computación
 
 > [!NOTE]
-> Este repositorio es para uso educativo UVG.
+> Este repositorio es para uso Educativo de la Universidad del Valle de Guatemala, su contenido no deberá ser utilizado para la lucrar con él.
 
 ## Descripción del Curso
 
@@ -112,16 +112,17 @@ Universidad del Valle de Guatemala
         "type": "Polygon",
         "coordinates": [
           [
-            [-90.490000, 14.604500],
-            [-90.488000, 14.604000],
-            [-90.488000, 14.602800],
-            [-90.490000, 14.603200],
-            [-90.490000, 14.604500]
+            [-90.487500, 14.603800],
+            [-90.486800, 14.603500],
+            [-90.486500, 14.604300],
+            [-90.487100, 14.604600],
+            [-90.487500, 14.603800]
           ]
         ]
       }
     }
   ]
 }
+
 
 ```
