@@ -4,6 +4,23 @@ Este proyecto tiene como objetivo procesar gramáticas libres de contexto y elim
 
 ## Estructura del Proyecto
 
+```
+📦 Laboratorio7
+├── 📂 PDFs
+│   └── 📜 Instrucciones.pdf
+│   └── 📜 ejercicio1.pdf
+├── 📂 resources
+│   ├── 📜 input1.txt
+│   └── 📜 input2.txt
+├── 📂 src
+│   └── 📜 main.py
+├── 📂 video
+│   └── 📜 video.mp4
+└── 📜 README.md
+```
+
+## Funciones Utilizadas
+
 - **`evaluate_expression`**: Verifica si una expresión de gramática cumple con el formato especificado por una expresión regular.
 - **`build_power_set`**: Construye el conjunto de potencias (todos los subconjuntos posibles) de un conjunto dado.
 - **`remove_epsilon_productions`**: Elimina las producciones epsilon (`ε`) de una gramática y actualiza las reglas de producción de acuerdo a las variables anulables.
@@ -50,23 +67,6 @@ B->b
  'B': ['b']}
 
 
-## Estructura del Proyecto
-
-```
-📦 Laboratorio7
-├── 📂 PDFs
-│   └── 📜 Instrucciones.pdf
-│   └── 📜 ejercicio1.pdf
-├── 📂 resources
-│   ├── 📜 input1.txt
-│   └── 📜 input2.txt
-├── 📂 src
-│   └── 📜 main.py
-├── 📂 video
-│   └── 📜 video.mp4
-└── 📜 README.md
-```
-
 ## Contacto
 
 Si tienes alguna duda o comentario sobre este repositorio, no dudes en ponerte en contacto conmigo a través de mis canales oficiales.
@@ -74,8 +74,8 @@ Si tienes alguna duda o comentario sobre este repositorio, no dudes en ponerte e
 Discord: **gabrielpaz___**
 Correo electrónico: **paz221087@uvg.edu.gt**  
 
-[![Linkedin](https://img.shields.io/badge/-username-blue?style=flat-square&logo=Linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN)](https://www.linkedin.com/in/gabriel-paz-gapg/)
-[![Gmail Badge](https://img.shields.io/badge/-seuemail@email.com-006bed?style=flat-square&logo=Gmail&logoColor=white&link=mailto:SEU-EMAIL)](mailto:SEU-EMAIL)
+[![Linkedin](https://img.shields.io/badge/-gabrielpaz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN)](https://www.linkedin.com/in/gabriel-paz-gapg/)
+[![Gmail Badge](https://img.shields.io/badge/-paz221087@uvg.edu.gt-006bed?style=flat-square&logo=Gmail&logoColor=white&link=mailto:SEU-EMAIL)](mailto:paz221087@uvg.edu.gt)
 [![GitHub](https://img.shields.io/github/followers/iuricode?label=follow&style=social)](LINK-DO-SEU-GITHUB)
 
 ## Licencia

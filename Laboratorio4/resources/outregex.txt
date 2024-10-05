@@ -1,0 +1,4 @@
+Expresión: (a*|b*)+, Cadena: aaaa, Resultado: sí
+Expresión: ((Îµ|a)|b*)*, Cadena: a, Resultado: sí
+Expresión: (a|b)*abb(a|b)*, Cadena: abb, Resultado: no
+Expresión: 0?(1?)?0*, Cadena: 0, Resultado: sí
