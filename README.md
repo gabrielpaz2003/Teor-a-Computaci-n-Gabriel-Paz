@@ -97,6 +97,7 @@ Este repositorio está licenciado bajo la Licencia MIT. Consulta el archivo `LIC
 
 Universidad del Valle de Guatemala
 
+```geojson
 {
   "type": "FeatureCollection",
   "features": [
@@ -137,3 +138,4 @@ Universidad del Valle de Guatemala
     }
   ]
 }
+```
