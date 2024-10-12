@@ -101,38 +101,38 @@ pip install -r requirements.txt
 
 ### cyk_algorithm.py:
 
-**Descripción:** Implementa el algoritmo CYK (Cocke-Younger-Kasami), que es un algoritmo de análisis sintáctico utilizado para verificar si una cadena pertenece a un lenguaje descrito por una gramática en CNF.
-**Funcionalidad:** Toma la gramática convertida a CNF y una cadena como entrada, y determina si la cadena es aceptada o no.
+- **Descripción:** Implementa el algoritmo CYK (Cocke-Younger-Kasami), que es un algoritmo de análisis sintáctico utilizado para verificar si una cadena pertenece a un lenguaje descrito por una gramática en CNF.
+- **Funcionalidad:** Toma la gramática convertida a CNF y una cadena como entrada, y determina si la cadena es aceptada o no.
 
 ### file_handler.py:
 
-**Descripción:** Manejador de archivos para leer y escribir datos en el proyecto. Lee la gramática desde un archivo de texto y escribe los resultados en archivos de salida.
-**Funcionalidad:** Lee el archivo de gramática desde la carpeta input y escribe los resultados del análisis en la carpeta output.
+- **Descripción:** Manejador de archivos para leer y escribir datos en el proyecto. Lee la gramática desde un archivo de texto y escribe los resultados en archivos de salida.
+- **Funcionalidad:** Lee el archivo de gramática desde la carpeta input y escribe los resultados del análisis en la carpeta output.
 
 ### grammar_utils.py:
 
-**Descripción:** Contiene varias utilidades para trabajar con gramáticas, incluyendo funciones para convertir una gramática a Forma Normal de Chomsky (CNF).
-**Funcionalidad:** Simplifica la gramática eliminando producciones epsilon, producciones unitarias, símbolos no derivables, y producciones inalcanzables.
+- **Descripción:** Contiene varias utilidades para trabajar con gramáticas, incluyendo funciones para convertir una gramática a Forma Normal de Chomsky (CNF).
+- **Funcionalidad:** Simplifica la gramática eliminando producciones epsilon, producciones unitarias, símbolos no derivables, y producciones inalcanzables.
 
 ### main.py:
 
-**Descripción:** Es el punto de entrada principal del programa. Controla el flujo del programa, desde la lectura de la gramática, el análisis de la frase con el algoritmo CYK, hasta la visualización y almacenamiento del árbol de parseo.
-**Funcionalidad:** Ejecuta el programa completo, pide al usuario que ingrese una frase, verifica la gramática con el algoritmo CYK, y genera el árbol de parseo si la frase es aceptada.
+- **Descripción:** Es el punto de entrada principal del programa. Controla el flujo del programa, desde la lectura de la gramática, el análisis de la frase con el algoritmo CYK, hasta la visualización y almacenamiento del árbol de parseo.
+- **Funcionalidad:** Ejecuta el programa completo, pide al usuario que ingrese una frase, verifica la gramática con el algoritmo CYK, y genera el árbol de parseo si la frase es aceptada.
 
 ### tree_visualizer.py:
 
-**Descripción:** Genera y visualiza el árbol de parseo utilizando la librería networkx para crear los nodos y aristas que representan la estructura del árbol.
-**Funcionalidad:** Toma la tabla generada por el algoritmo CYK y construye un árbol de parseo, que luego se visualiza y guarda como una imagen en la carpeta output.
+- **Descripción:** Genera y visualiza el árbol de parseo utilizando la librería networkx para crear los nodos y aristas que representan la estructura del árbol.
+- **Funcionalidad:** Toma la tabla generada por el algoritmo CYK y construye un árbol de parseo, que luego se visualiza y guarda como una imagen en la carpeta output.
 
 ### README.md:
 
-**Descripción:** Proporciona una descripción detallada del proyecto, incluyendo instrucciones de instalación, requisitos, cómo usar el programa y una explicación de la estructura del proyecto.
-**Funcionalidad:** Documento de referencia para cualquier persona que quiera entender cómo instalar y ejecutar el proyecto.
+- **Descripción:** Proporciona una descripción detallada del proyecto, incluyendo instrucciones de instalación, requisitos, cómo usar el programa y una explicación de la estructura del proyecto.
+- **Funcionalidad:** Documento de referencia para cualquier persona que quiera entender cómo instalar y ejecutar el proyecto.
 
 ### requirements.txt:
 
-**Descripción:** Lista todas las dependencias necesarias para ejecutar el proyecto, como networkx, matplotlib, pydot, y otras librerías de Python.
-**Funcionalidad:** Facilita la instalación de dependencias utilizando el comando pip install -r requirements.txt.
+- **Descripción:** Lista todas las dependencias necesarias para ejecutar el proyecto, como networkx, matplotlib, pydot, y otras librerías de Python.
+- **Funcionalidad:** Facilita la instalación de dependencias utilizando el comando pip install -r requirements.txt.
 
 ## Contacto
 
