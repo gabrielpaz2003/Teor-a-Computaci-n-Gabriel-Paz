@@ -78,27 +78,26 @@ pip install -r requirements.txt
 ```
 📦 Laboratorio7
 ├── 📂 input
-│   └── ![TXT](https://img.icons8.com/color/48/000000/txt.png) gramatica1.txt
+│   └── 📜 gramatica1.txt
 ├── 📂 output
-│   └── ![TXT](https://img.icons8.com/color/48/000000/txt.png) resultado.txt
+│   └── 📜 resultado.txt
 ├── 📂 src
-│   ├── ![Python](https://img.icons8.com/color/48/000000/python--v1.png) config.py
-│   ├── ![Python](https://img.icons8.com/color/48/000000/python--v1.png) cyk_algorithm.py
-│   ├── ![Python](https://img.icons8.com/color/48/000000/python--v1.png) file_handler.py
-│   ├── ![Python](https://img.icons8.com/color/48/000000/python--v1.png) grammar_utils.py
-│   ├── ![Python](https://img.icons8.com/color/48/000000/python--v1.png) main.py
-│   └── ![Python](https://img.icons8.com/color/48/000000/python--v1.png) tree_visualizer.py
-├── ![PDF](https://img.icons8.com/color/48/000000/pdf.png) Instrucciones.pdf
-├── ![TXT](https://img.icons8.com/color/48/000000/txt.png) README.md
-└── ![TXT](https://img.icons8.com/color/48/000000/txt.png) requirements.txt
-
+│   ├── 📜 config.py
+│   ├── 📜 cyk_algorithm.py
+│   ├── 📜 file_handler.py
+│   ├── 📜 grammar_utils.py
+│   ├── 📜 main.py
+│   └── 📜 tree_visualizer.py
+├── 📜 Instrucciones.pdf
+├── 📜 README.md
+└── 📜 requirements.txt
 ```
 
 
 ### config.py:
 
-**Descripción:** Este archivo contiene configuraciones clave del proyecto, como la ruta por defecto para el archivo de entrada. Sirve para centralizar las configuraciones y facilitar posibles cambios en el futuro.
-**Funcionalidad:** Define la ruta del archivo de entrada de la gramática.
+- **Descripción:** Este archivo contiene configuraciones clave del proyecto, como la ruta por defecto para el archivo de entrada. Sirve para centralizar las configuraciones y facilitar posibles cambios en el futuro.
+- **Funcionalidad:** Define la ruta del archivo de entrada de la gramática.
 
 ### cyk_algorithm.py:
 
