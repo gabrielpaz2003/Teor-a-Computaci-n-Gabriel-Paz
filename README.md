@@ -74,6 +74,7 @@ Dentro del curso, se espera que los estudiantes desarrollen pequeños proyectos 
 ├── 📂 Laboratorio6
 ├── 📂 Laboratorio7
 ├── 📂 Proyecto1
+├── 📂 Proyecto2
 └── 📜 README.md
 ```
 
