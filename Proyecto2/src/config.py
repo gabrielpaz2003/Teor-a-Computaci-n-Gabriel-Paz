@@ -6,7 +6,7 @@ INPUT_DIR = os.path.join(BASE_DIR, '../input')
 OUTPUT_DIR = os.path.join(BASE_DIR, '../output')
 
 # Nombre del archivo de gramática por defecto
-DEFAULT_INPUT_FILE = '../input/gramatica1.txt'
+DEFAULT_INPUT_FILE = 'input\gramatica.txt'
 
 # Crea las carpetas si no existen
 os.makedirs(INPUT_DIR, exist_ok=True)

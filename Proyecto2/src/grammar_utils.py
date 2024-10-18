@@ -205,75 +205,99 @@ def removeUnreachableProductions(grammar: dict, entry:str) -> dict:
     return newGrammar
 
 #CONVERSION DE GRAMATICA A FORMA NORMAL DE CHOMSKY
-def convertToChomsky(Grammar: dict, entry: str) -> dict:
-    #Simplificar gramatica
-    grammar = removeEpsilonProductions(Grammar)
-    grammar = removeUnitProductions(grammar)
-    grammar = removeNonDerivableSymbols(grammar)
-    grammar = removeUnreachableProductions(grammar, entry)
-    #Convertir a forma normal de Chomsky
+def convertToChomsky(grammar: dict, entry: str) -> dict:
+    # Verificaciones de entrada
+    if not isinstance(grammar, dict):
+        raise TypeError("La gramática debe ser un diccionario.")
+    
+    if not grammar:
+        raise ValueError("La gramática no puede estar vacía.")
+    
+    if not isinstance(entry, str) or not entry:
+        raise ValueError("El símbolo de entrada debe ser una cadena no vacía.")
 
-    pprint(grammar)
+    try:
+        # Simplificación de la gramática
+        grammar = removeEpsilonProductions(grammar)
+        grammar = removeUnitProductions(grammar)
+        grammar = removeNonDerivableSymbols(grammar)
+        grammar = removeUnreachableProductions(grammar, entry)
 
-    grammarSplit = {}
+        if not grammar:
+            raise ValueError("La gramática no pudo ser simplificada correctamente.")
+    
 
-    for i in grammar:
-        grammarSplit[i] = []
-        for j in grammar[i]:
-            grammarSplit[i].append(j.split(" "))
+        # Conversión a Forma Normal de Chomsky
+        grammarSplit = {}
 
+        for i in grammar:
+            grammarSplit[i] = []
+            for j in grammar[i]:
+                # Verificación de la estructura de la producción
+                if not isinstance(j, str):
+                    raise ValueError(f"La producción {j} en {i} no es una cadena válida.")
+                grammarSplit[i].append(j.split(" "))
 
-    #Cambiar terminales
-    terminales = {}
+        # Cambiar terminales
+        terminales = {}
+        t = 0
+        changed = True
 
-    t = 0 
-    changed = True
-    while changed:
-        changed = False
-        newGrammar = copy.deepcopy(grammarSplit)
-        for i in grammarSplit:
-            for j in range(len(grammarSplit[i])):
-                for k in range(len(grammarSplit[i][j])):
-                    if (not (isNonTerminal(grammarSplit[i][j][k]))) and (len(grammarSplit[i][j]) > 1):
-                        if grammarSplit[i][j][k] not in terminales.keys():
-                            terminales[grammarSplit[i][j][k]] = f"T{t}"
-                            newGrammar[i][j][k] = f"T{t}"
-                            t += 1
+        while changed:
+            changed = False
+            newGrammar = copy.deepcopy(grammarSplit)
+            for i in grammarSplit:
+                for j in range(len(grammarSplit[i])):
+                    for k in range(len(grammarSplit[i][j])):
+                        # Verificar que no sea terminal y su longitud
+                        if (not (isNonTerminal(grammarSplit[i][j][k]))) and (len(grammarSplit[i][j]) > 1):
+                            if grammarSplit[i][j][k] not in terminales.keys():
+                                terminales[grammarSplit[i][j][k]] = f"T{t}"
+                                newGrammar[i][j][k] = f"T{t}"
+                                t += 1
+                                changed = True
+                            else:
+                                newGrammar[i][j][k] = terminales[grammarSplit[i][j][k]]
+                                changed = True
+            grammarSplit = newGrammar
+
+        for i in terminales:
+            grammarSplit[terminales[i]] = [[i]]
+
+        grammar = grammarSplit
+        # Cambiar no terminales
+        nonTerminals = {}
+        nt = 0
+        changed = True
+
+        while changed:
+            changed = False
+            newGrammar = copy.deepcopy(grammar)
+            for i in grammar:
+                for j in grammar[i]:
+                    if len(j) > 2:
+                        separated = j[1:]
+                        if " ".join(separated) not in nonTerminals.keys():
+                            nonTerminals[" ".join(separated)] = f"NT{nt}"
+                            newGrammar[i].append([j[0], f"NT{nt}"])
+                            newGrammar[i].remove(j)
+                            nt += 1
                             changed = True
                         else:
-                            newGrammar[i][j][k] = terminales[grammarSplit[i][j][k]]
+                            newGrammar[i].append([j[0], nonTerminals[" ".join(separated)]])
+                            newGrammar[i].remove(j)
                             changed = True
-        grammarSplit = newGrammar
+            grammar = newGrammar
 
-    for i in terminales:
-        grammarSplit[terminales[i]] = [[i]]
-      
-    grammar = grammarSplit
+        for i in nonTerminals:
+            grammar[nonTerminals[i]] = [i.split()]
 
-    nonTerminals = {}
+        # Imprimir la gramática final en CNF
+        print("Gramática final en CNF:")
+        pprint(grammar)
 
-    nt = 0
-    changed = True
-    while changed:
-        changed = False
-        newGrammar = copy.deepcopy(grammar)
-        for i in grammar:
-            for j in grammar[i]:
-                if len(j) > 2:
-                    separated = j[1:]
-                    if " ".join(separated) not in nonTerminals.keys():
-                        nonTerminals[" ".join(separated)] = f"NT{nt}"
-                        newGrammar[i].append([j[0], f"NT{nt}"])
-                        newGrammar[i].remove(j)
-                        nt += 1
-                        changed = True
-                    else:
-                        newGrammar[i].append([j[0], nonTerminals[" ".join(separated)]])
-                        newGrammar[i].remove(j)
-                        changed = True
-        grammar = newGrammar
+        return grammar
 
-    for i in nonTerminals:
-        grammar[nonTerminals[i]] = [i.split()]
+    except Exception as e:
+        raise RuntimeError(f"Error al convertir la gramática a CNF: {e}")
 
-    return grammar

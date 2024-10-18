@@ -1,58 +1,76 @@
-import os
 import time
-from file_handler import readFile, writeOutput
+from file_handler import readFile, log_result
 from grammar_utils import convertToChomsky, evaluateExpression
 from cyk_algorithm import cykParse
 from tree_visualizer import generateAndVisualizeTree
 from pprint import pprint
-from config import DEFAULT_INPUT_FILE
-
+from config import DEFAULT_INPUT_FILE, OUTPUT_DIR
 
 if __name__ == '__main__':
-    start_time = time.time()
-    regex = "[A-z]+(\s)?->(\s)?(([A-Za-z0-9]|\s)*(\|)*)+|ε"
-    file_path = os.path.abspath('input\gramatica.txt')
-    data = readFile(file_path)
-    for expression in data:
-        if expression != '':
-            if not evaluateExpression(regex=regex, expression=expression):
-                print(f'La producción {expression} no cumple por lo que la gramática no es aceptada')
-                exit(0)
+    try:
+        # Inicia el cronómetro antes de cualquier procesamiento
+        start_time = time.time()
 
-    grammar: dict = {}
+        # Leer la gramática desde el archivo
+        data = readFile(DEFAULT_INPUT_FILE)
+        if data is None:
+            raise ValueError(f"No se pudo leer el archivo {DEFAULT_INPUT_FILE}")
+        
+        # Validar cada producción
+        regex = "[A-z]+(\s)?->(\s)?(([A-Za-z0-9]|\s)*(\|)*)+|ε"
+        for expression in data:
+            if expression != '':
+                if not evaluateExpression(regex=regex, expression=expression):
+                    raise ValueError(f"La producción {expression} no cumple con el formato esperado.")
 
-    entry: str = ''
+        # Conversión a CNF
+        grammar: dict = {}
+        entry: str = ''
+        for expression in data:
+            expressionSplit1 = expression.split('->')
+            expressionSplit2 = expressionSplit1[1].split('|')
+            splitted = [i.strip() for i in expressionSplit2]
 
-    for expression in data:
+            if entry == '':
+                entry = expressionSplit1[0].strip()
 
-        expressionSplit1 = expression.split('->')
-        expressionSplit2 = expressionSplit1[1].split('|')
-        splitted = []
-        for i in expressionSplit2:
-            splitted.append(i.strip())
+            if expressionSplit1[0].strip() not in grammar:
+                grammar[expressionSplit1[0].strip()] = splitted
+            else:
+                grammar[expressionSplit1[0].strip()].extend(splitted)
 
-        if entry == '':
-            entry = expressionSplit1[0].strip()
+        
+        # Convertir la gramática a CNF
+        grammar = convertToChomsky(grammar, entry)
+        pprint(grammar)
 
+        # Pausar el cronómetro para esperar la entrada del usuario
+        execution_time = time.time() - start_time
 
-        if expressionSplit1[0] not in grammar:
-            grammar[expressionSplit1[0].strip()] = splitted
+        # Pedir al usuario que ingrese una frase
+        frase = input("Ingrese la frase que desea verificar: ")
+        sentence = frase.split()
+
+        # Reanudar el cronómetro
+        resume_time = time.time()
+
+        # Aplicar el algoritmo CYK
+        accept, table = cykParse(grammar, sentence)
+
+        # Mostrar los resultados
+        if accept:
+            print("La frase SI es aceptada")
+            generateAndVisualizeTree(grammar, table, sentence, entry)
         else:
-            grammar[expressionSplit1[0].strip()].extend(splitted)
+            print("La frase NO es aceptada")
 
-    grammar: dict = convertToChomsky(grammar, entry) 
-    pprint(grammar)
-    sentence: list = input("Ingrese la frase que desea verificar: ").split()
-    accept, table = cykParse(grammar, sentence)
+        # Guardar los resultados en el archivo de log
+        print("Probando la frase desde el main", frase)
+        log_result(accept, frase, OUTPUT_DIR)
 
-    end_time = time.time()  # Tiempo de finalización
+        # Detener el cronómetro y calcular el tiempo total de ejecución (sin contar la entrada del usuario)
+        total_time = time.time() - resume_time + execution_time
+        print(f"Tiempo de ejecución (sin incluir la entrada del usuario): {total_time:.4f} segundos")
 
-    # Calcular el tiempo total de ejecución
-    execution_time = end_time - start_time
-    print(f"El tiempo total de ejecución fue de {execution_time:.4f} segundos.")
-
-    if accept:
-        print("La frase SI es aceptada")
-        generateAndVisualizeTree(grammar, table, sentence, entry)
-    else:
-        print("La frase NO es aceptada")
+    except Exception as e:
+        print(f"Error: {e}")
