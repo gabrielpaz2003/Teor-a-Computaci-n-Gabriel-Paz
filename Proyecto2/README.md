@@ -3,6 +3,9 @@
 
 Este proyecto implementa un **análisis sintáctico** basado en gramáticas libres de contexto, utilizando el **algoritmo CYK** para verificar si una frase es aceptada por la gramática, y genera un **árbol de parseo** que se visualiza y se guarda como una imagen.
 
+## Link de Video Explicativo
+Link: https://youtu.be/pp9GjAv2leM
+
 ## Características del Proyecto
 
 - Análisis Sintáctico con CYK: Implementa el algoritmo CYK para verificar si una frase es aceptada por una gramática en Forma Normal de Chomsky (CNF).
