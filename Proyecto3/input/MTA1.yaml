@@ -1,0 +1,2229 @@
+q_states:
+  q_list:
+    - 'q0'
+    - 'q1'
+    - 'q2'
+    - 'q3'
+    - 'q4'
+    - 'q5'
+  initial: 'q0'
+  final: 
+  - 'q3'
+  - 'q5'
+  trap:
+
+alphabet:
+  - 'A'
+  - 'B'
+  - 'C'
+  - 'D'
+  - 'E'
+  - 'F'
+  - 'G'
+  - 'H'
+  - 'I'
+  - 'J'
+  - 'K'
+  - 'L'
+  - 'M'
+  - 'N'
+  - 'O'
+  - 'P'
+  - 'Q'
+  - 'R'
+  - 'S'
+  - 'T'
+  - 'U'
+  - 'V'
+  - 'W'
+  - 'X'
+  - 'Y'
+  - 'Z'
+  - ' '
+  - '-'
+  - 'a'
+  - 'b'
+  - 'c'
+  - 'd'
+  - 'e'
+  - 'f'
+  - 'g'
+  - 'h'
+  - 'i'
+  - 'j'
+  - 'k'
+  - 'l'
+  - 'm'
+  - 'n'
+  - 'o'
+  - 'p'
+  - 'q'
+  - 'r'
+  - 's'
+  - 't'
+  - 'u'
+  - 'v'
+  - 'w'
+  - 'x'
+  - 'y'
+  - 'z'
+
+tape_alphabet:
+
+delta:
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'A'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'Z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'B'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'A'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'C'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'B'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'D'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'C'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'E'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'D'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'F'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'E'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'G'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'F'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'H'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'G'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'I'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'H'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'J'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'I'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'K'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'J'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'L'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'K'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'M'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'L'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'N'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'M'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'O'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'N'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'P'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'O'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'Q'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'P'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'R'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'Q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'S'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'R'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'T'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'S'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'U'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'T'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'V'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'U'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'W'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'V'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'X'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'W'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'Y'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'X'
+      tape_displacement: R
+  
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'Z'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'Y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'a'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'b'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'a'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'c'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'b'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'd'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'c'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'e'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'd'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'f'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'e'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'g'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'f'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'h'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'g'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'i'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'h'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'j'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'i'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'k'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'j'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'l'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'k'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'm'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'l'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'n'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'm'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'o'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'n'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'p'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'o'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'q'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'p'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'r'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 's'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'r'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 't'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 's'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'u'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 't'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'v'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'u'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'w'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'v'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'x'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'w'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'y'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'x'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: 'z'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: ' '
+    output:
+      final_state: q0
+      mem_cache_value: 
+      tape_output: ' '
+      tape_displacement: R
+
+  - params:
+      initial_state: q0
+      mem_cache_value: 
+      tape_input: '-'
+    output:
+      final_state: q1
+      mem_cache_value: 
+      tape_output: 
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'A'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'B'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'B'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'C'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'C'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'D'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'D'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'E'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'E'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'F'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'F'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'G'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'G'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'H'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'H'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'I'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'I'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'J'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'J'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'K'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'K'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'L'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'L'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'M'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'M'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'N'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'N'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'O'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'O'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'P'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'P'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'Q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'Q'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'R'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'R'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'S'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'S'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'T'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'T'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'U'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'U'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'V'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'V'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'W'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'W'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'X'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'X'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'Y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'Y'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'Z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'Z'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'A'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'a'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'b'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'b'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'c'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'c'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'd'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'd'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'e'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'e'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'f'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'f'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'g'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'g'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'h'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'h'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'i'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'i'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'j'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'j'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'k'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'k'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'l'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'l'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'm'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'm'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'n'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'n'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'o'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'o'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'p'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'p'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'q'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'r'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'r'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 's'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 's'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 't'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 't'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'u'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'u'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'v'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'v'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'w'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'w'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'x'
+      tape_displacement: R
+
+  - params: 
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'x'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'y'
+      tape_displacement: R
+
+  - params: 
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'y'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: 'z'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'a'
+      tape_displacement: R
+
+  - params:
+      initial_state: q1
+      mem_cache_value: 
+      tape_input: ' '
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: ' '
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'A'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'B'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'B'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'C'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'C'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'D'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'D'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'E'
+      tape_displacement: R
+
+  - params: 
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'E'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'F'
+      tape_displacement: R
+
+  - params: 
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'F'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'G'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'G'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'H'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'H'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'I'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'I'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'J'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'J'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'K'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'K'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'L'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'L'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'M'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'M'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'N'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'N'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'O'
+      tape_displacement: R 
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'O'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'P'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'P'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'Q'
+      tape_displacement: R
+
+  - params: 
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'Q'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'R'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'R'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'S'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'S'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'T'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'T'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'U'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'U'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'V'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'V'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'W'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'W'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'X'
+      tape_displacement: R 
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'X'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'Y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'Y'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'Z'
+      tape_displacement: R 
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'Z'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'A'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'a'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'b'
+      tape_displacement: R 
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'b'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'c'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'c'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'd'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'd'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'e'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'e'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'f'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'f'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'g'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'g'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'h'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'h'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'i'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'i'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'j'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'j'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'k'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'k'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'l'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'l'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'm'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'm'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'n'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'n'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'o'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'o'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'p'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'p'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'q'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'r'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'r'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 's'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 's'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 't'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 't'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'u'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'u'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'v'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'v'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'w'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'w'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'x'
+      tape_displacement: R 
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'x'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'y'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 'z'
+    output:
+      final_state: q2
+      mem_cache_value: 
+      tape_output: 'a'
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: ' '
+    output:
+      final_state: q3
+      mem_cache_value: 
+      tape_output: ' '
+      tape_displacement: R
+
+  - params:
+      initial_state: q2
+      mem_cache_value: 
+      tape_input: 
+    output:
+      final_state: q3
+      mem_cache_value: 
+      tape_output: 
+      tape_displacement: L
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'A'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'Z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'B'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'A'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'C'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'B'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'D'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'C'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'E'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'D'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'F'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'E'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'G'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'F'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'H'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'G'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'I'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'H'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'J'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'I'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'K'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'J'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'L'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'K'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'M'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'L'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'N'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'M'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'O'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'N'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'P'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'O'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'Q'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'P'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'R'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'Q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'S'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'R'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'T'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'S'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'U'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'T'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'V'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'U'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'W'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'V'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'X'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'W'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'Y'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'X'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'Z'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'Y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'a'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'z'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'b'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'a'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'c'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'b'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'd'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'c'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'e'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'd'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'f'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'e'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'g'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'f'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'h'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'g'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'i'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'h'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'j'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'i'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'k'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'j'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'l'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'k'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'm'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'l'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'n'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'm'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'o'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'n'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'p'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'o'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'q'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'p'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'r'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'q'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 's'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'r'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 't'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 's'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'u'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 't'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'v'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'u'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'w'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'v'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'x'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'w'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'y'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'x'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 'z'
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: 'y'
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: ' '
+    output:
+      final_state: q4
+      mem_cache_value: 
+      tape_output: ' '
+      tape_displacement: R
+
+  - params:
+      initial_state: q4
+      mem_cache_value: 
+      tape_input: 
+    output:
+      final_state: q5
+      mem_cache_value: 
+      tape_output: 
+      tape_displacement: L
+
+
+simulation_strings:
+  - '-HolaGente'  
+  - '-TeoriaDeLaComputacion'
+  - 'MaquinaDeTuring'
+  - 'Mochhila'
